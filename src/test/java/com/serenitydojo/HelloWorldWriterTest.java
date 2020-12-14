@@ -32,4 +32,21 @@ public class HelloWorldWriterTest {
 
         System.out.println(upperCaseFirstName.trim());
     }
+
+    @Test
+    public void whenCreatingObjects() {
+
+        Cat felix = new Cat("Felix", "Tuna");
+        felix.setName("Felix");
+        felix.setFavouriteFood("Tuna");
+
+        Cat spot = new Cat("Spot", "Mouse");
+        spot.setName("Spot");
+        spot.setFavouriteFood("mouse");
+
+        System.out.println(felix.getName() + " likes " + felix.getFavouriteFood());
+        System.out.println(spot.getName() + " likes " + spot.getFavouriteFood());
+
+
+    }
 }
